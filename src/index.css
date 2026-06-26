@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@theme {
+  --background-image-hero-spenda: url("/src/assets/hero.jpg");
+}
