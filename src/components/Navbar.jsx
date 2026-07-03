@@ -7,6 +7,7 @@ import {
   GraduationCap,
   Camera,
   Phone,
+  Newspaper,
 } from "lucide-react";
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
   const closeSidebar = () => setIsOpen(false);
   const navLinks = [
     { name: "Home", href: "#", icon: House },
-    { name: "Profile", href: "#profile", icon: GraduationCap },
+    { name: "News", href: "#news", icon: Newspaper },
     { name: "Information", href: "#info", icon: Book },
     { name: "Galery", href: "#galery", icon: Camera },
     { name: "Contact", href: "#contact", icon: Phone },
@@ -47,7 +48,7 @@ function Navbar() {
                 className="w-16 h-16 md:w-24 md:h-24"
               />
               <div className="flex flex-col items-left justify-center">
-                <h1 className="text-xl md:text-2xl font-bold uppercase text-slate-200">
+                <h1 className="text-lg md:text-xl font-bold uppercase text-slate-200">
                   smp n 2 tegal
                 </h1>
               </div>
