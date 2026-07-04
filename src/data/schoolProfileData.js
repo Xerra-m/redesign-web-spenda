@@ -21,7 +21,7 @@ export const schoolStats = [
     id: 4,
     count: "12+",
     label: "Ekstrakurikuler",
-    icon: "Activity",
+    icon: "Contact",
   },
 ];
 

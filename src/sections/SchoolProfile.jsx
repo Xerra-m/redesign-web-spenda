@@ -1,5 +1,6 @@
 import SchoolStatsCard from "../components/SchoolStatsCard";
 import PrincipalCard from "../components/PrincipalWelcomeCard";
+import VisionMissionCard from "../components/VisionMissionCard";
 
 function SchoolProfile() {
   return (
@@ -12,6 +13,7 @@ function SchoolProfile() {
       </h1>
       <SchoolStatsCard />
       <PrincipalCard />
+      <VisionMissionCard />
     </section>
   );
 }

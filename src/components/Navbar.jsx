@@ -57,7 +57,7 @@ function Navbar() {
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-full mx-auto">
           <div
-            className={`flex items-center justify-between px-4 py-4 md:px-10 md:py-6 text-white transition-all duration-300 ${isScrolled ? "bg-[#002448]" : "bg-transparent"}`}
+            className={`flex items-center justify-between px-4 py-4 md:px-10 md:py-2 text-white transition-all duration-600 ${isScrolled ? "bg-[#002448]" : "bg-transparent"}`}
           >
             {/* logo */}
             <a href="/" className="flex items-center group">

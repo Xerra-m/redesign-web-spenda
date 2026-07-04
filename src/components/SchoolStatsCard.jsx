@@ -1,16 +1,16 @@
-import { Award, Users, UserCheck, Activity } from "lucide-react";
+import { Award, Users, UserCheck, Contact } from "lucide-react";
 import { schoolStats } from "../data/schoolProfileData";
 
 const iconMap = {
   Award: Award,
   Users: Users,
   UserCheck: UserCheck,
-  Activity: Activity,
+  Contact: Contact,
 };
 
 function SchoolStatsCard() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-fit mx-auto mb-4 px-4">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-fit mx-auto px-4">
       {schoolStats.map((stat) => {
         const Icon = iconMap[stat.icon];
         return (
