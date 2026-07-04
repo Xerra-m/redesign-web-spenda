@@ -1,6 +1,19 @@
+import SchoolStatsCard from "../components/SchoolStatsCard";
+import PrincipalCard from "../components/PrincipalWelcomeCard";
+
 function SchoolProfile() {
-  const schoolHistory = "SMP Negeri 2 Kota Tegal resmi didirikan berdasarkan Surat Keputusan (SK) Pendirian Sekolah tertanggal 1 Agustus 1958 (dengan nomor SK Izin Operasional: 39 SK B 111). Pada awal masa berdirinya, sekolah ini mulai mendidik generasi pertamanya, di mana angkatan kelulusan paling tua yang tercatat secara resmi dalam ikatan alumni berasal dari angkatan tahun 1959. Sejak saat itu, sekolah ini terus berkembang menjadi salah satu sekolah menengah pertama negeri yang diperhitungkan di wilayah Kota Tegal.";
-  return <section className=""></section>;
+  return (
+    <section
+      id="profile"
+      className="flex flex-col gap-6 items-center justifi-center bg-slate-50 scroll-mt-24 px-4 py-6 md:px-10 md:py-6 border-t border-gray-200"
+    >
+      <h1 className="text-slate-800 text-xl md:text-2xl font-semibold underline decoration-blue-800 decoration-2 underline-offset-6">
+        Profile Sekolah
+      </h1>
+      <SchoolStatsCard />
+      <PrincipalCard />
+    </section>
+  );
 }
 
 export default SchoolProfile;
