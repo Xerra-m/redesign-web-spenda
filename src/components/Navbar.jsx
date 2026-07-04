@@ -1,21 +1,38 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu,
   X,
   House,
+  Newspaper,
+  School,
   Book,
-  GraduationCap,
   Camera,
   Phone,
-  Newspaper,
 } from "lucide-react";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeSidebar = () => setIsOpen(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navLinks = [
     { name: "Home", href: "#", icon: House },
     { name: "News", href: "#news", icon: Newspaper },
+    { name: "Profile", href: "#profile", icon: School },
     { name: "Information", href: "#info", icon: Book },
     { name: "Galery", href: "#galery", icon: Camera },
     { name: "Contact", href: "#contact", icon: Phone },
@@ -39,7 +56,9 @@ function Navbar() {
     <>
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-full mx-auto">
-          <div className="flex items-center justify-between bg-transparent px-5 py-3 md:px-10 md:py-4 text-white">
+          <div
+            className={`flex items-center justify-between px-4 py-4 md:px-10 md:py-6 text-white transition-all duration-300 ${isScrolled ? "bg-[#002448]" : "bg-transparent"}`}
+          >
             {/* logo */}
             <a href="/" className="flex items-center group">
               <img
