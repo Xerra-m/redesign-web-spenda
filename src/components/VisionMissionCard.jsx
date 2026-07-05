@@ -1,8 +1,6 @@
-import { useState } from "react";
 import { schoolVisionMission } from "../data/schoolProfileData";
 
 function VisionMissionCard() {
-  const [isExpanded, setIsExpanded] = useState(false);
   return (
     <div className="flex flex-col items-center justify-center w-full gap-4">
       {/* visi */}
@@ -21,12 +19,8 @@ function VisionMissionCard() {
         </h1>
         {schoolVisionMission.mission.map((misi, index) => (
           <div className="flex items-center justify-center gap-2">
-            <div
-              className="w-2 h-2 rounded-full bg-gray-400"
-            ></div>
-            <p
-              className="text-sm md:text-md text-gray-600 leading-relaxed text-justify w-full"
-            >
+            <div className="w-2 h-2 rounded-full bg-gray-400"></div>
+            <p className="text-sm md:text-md text-gray-600 leading-relaxed text-justify w-full">
               {misi}
             </p>
           </div>
