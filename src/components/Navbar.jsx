@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Menu,
   X,
   House,
+  Newspaper,
+  School,
   Book,
-  GraduationCap,
   Camera,
   Phone,
 } from "lucide-react";
@@ -12,9 +13,26 @@ import {
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const closeSidebar = () => setIsOpen(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const navLinks = [
     { name: "Home", href: "#", icon: House },
-    { name: "Profile", href: "#profile", icon: GraduationCap },
+    { name: "News", href: "#news", icon: Newspaper },
+    { name: "Profile", href: "#profile", icon: School },
     { name: "Information", href: "#info", icon: Book },
     { name: "Galery", href: "#galery", icon: Camera },
     { name: "Contact", href: "#contact", icon: Phone },
@@ -38,7 +56,9 @@ function Navbar() {
     <>
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-full mx-auto">
-          <div className="flex items-center justify-between bg-transparent px-5 py-3 md:px-10 md:py-4 text-white">
+          <div
+            className={`flex items-center justify-between px-4 py-4 md:px-10 md:py-2 text-white transition-all duration-600 ${isScrolled ? "bg-[#002448]" : "bg-transparent"}`}
+          >
             {/* logo */}
             <a href="/" className="flex items-center group">
               <img
@@ -47,7 +67,7 @@ function Navbar() {
                 className="w-16 h-16 md:w-24 md:h-24"
               />
               <div className="flex flex-col items-left justify-center">
-                <h1 className="text-xl md:text-2xl font-bold uppercase text-slate-200">
+                <h1 className="text-lg md:text-xl font-bold uppercase text-slate-200">
                   smp n 2 tegal
                 </h1>
               </div>
