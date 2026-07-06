@@ -2,6 +2,7 @@ import SchoolStatsCard from "../components/SchoolStatsCard";
 import PrincipalCard from "../components/PrincipalWelcomeCard";
 import VisionMissionCard from "../components/VisionMissionCard";
 import BriefHistoryCard from "../components/BriefHistoryCard";
+import EkskulCard from "../components/EkskulCard";
 
 function SchoolProfile() {
   return (
@@ -13,6 +14,7 @@ function SchoolProfile() {
         Profile Sekolah
       </h1>
       <SchoolStatsCard />
+      <EkskulCard />
       <PrincipalCard />
       <VisionMissionCard />
       <BriefHistoryCard />
