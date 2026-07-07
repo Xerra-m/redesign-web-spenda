@@ -17,7 +17,9 @@ function NewsCard() {
         spaceBetween={16}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        loop={true}
+        speed={200}
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
         breakpoints={{ 768: { slidesPerView: 3, spaceBetween: 20 } }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         className="pb-12"

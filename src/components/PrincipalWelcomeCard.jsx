@@ -4,7 +4,7 @@ import { principalWelcome } from "../data/schoolProfileData";
 function PrincipalCard() {
   const [isExpanded, setIsExpanded] = useState(false);
   return (
-    <div className="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl shadow-md flex flex-col md:flex-row gap-2 items-center md:items-start">
+    <div className="bg-white border border-gray-200 p-6 md:p-8 rounded-2xl shadow-md flex flex-col md:flex-row gap-2 items-center md:items-start w-full">
       {/* kepsek */}
       <div className="flex flex-col items-center text-center shrink-0 w-full md:w-1/3 max-w-[240px]">
         <div className="w-70 h-70 md:w-60 md:h-60 overflow-hidden">
