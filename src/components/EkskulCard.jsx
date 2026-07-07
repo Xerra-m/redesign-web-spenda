@@ -16,6 +16,7 @@ function EkskulCard() {
         spaceBetween={16}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        loop={true}
         speed={200}
         autoplay={{
           delay: 2000,
@@ -41,7 +42,7 @@ function EkskulCard() {
             >
               <div>
                 <div className="flex items-center justify-center gap-8 mb-4">
-                  <div className="bg-slate-100 border border-gray-300 flex items-center justify-center p-4">
+                  <div className="bg-slate-100 border border-gray-300 flex items-center justify-center p-4 rounded-md shadow-md">
                     <Contact size={24} />
                   </div>
                   <h1 className="text-xl font-bold text-[#222222] line-clamp-2 mb-3">

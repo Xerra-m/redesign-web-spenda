@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import News from "./sections/News";
 import SchoolProfile from "./sections/SchoolProfile";
+import Footer from "./sections/Footer";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <News />
         <SchoolProfile />
       </main>
+      <Footer />
     </>
   );
 }

@@ -19,7 +19,7 @@ function SchoolStatsCard() {
             className="flex flex-col items-center justify-center gap-2 w-full bg-white border border-gray-200 p-4 rounded-md shadow-md"
           >
             <div className="flex items-center justify-center gap-4">
-              <Icon size={28} />
+              <Icon size={28} strokeWidth={2.5} />
               <p className="text-sm font-semibold">{stat.label}</p>
             </div>
             <span className="text-amber-400 font-bold">{stat.count}</span>
