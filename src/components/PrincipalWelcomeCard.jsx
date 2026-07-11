@@ -12,6 +12,7 @@ function PrincipalCard() {
             src={principalWelcome.image}
             alt={principalWelcome.name}
             className="w-full h-full object-cover"
+            loading="lazy"
           />
         </div>
         <h4 className="text-md font-bold text-gray-800 mt-4 leading-snug">

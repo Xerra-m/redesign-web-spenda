@@ -33,8 +33,8 @@ function Navbar() {
     { name: "Home", href: "#", icon: House },
     { name: "News", href: "#news", icon: Newspaper },
     { name: "Profile", href: "#profile", icon: School },
+    { name: "Gallery", href: "#gallery", icon: Camera },
     { name: "Information", href: "#info", icon: Book },
-    { name: "Galery", href: "#galery", icon: Camera },
     { name: "Contact", href: "#contact", icon: Phone },
   ];
   const renderLinks = navLinks.map((link) => {
@@ -43,7 +43,7 @@ function Navbar() {
       <li key={link.name} className="w-full md:w-auto">
         <a
           href={link.href}
-          className="text-slate-200 hover:text-white flex flex-row gap-4"
+          className="md:text-slate-200 hover:text-slate-white text-slate-800 active:text-slate-300 flex flex-row gap-4"
           onClick={closeSidebar}
         >
           <Icon size={22} className="md:hidden" />
@@ -99,10 +99,10 @@ function Navbar() {
 
       {/* sidebar */}
       <aside
-        className={`fixed top-0 right-0 h-screen w-72 bg-[#002448] border-l-2 border-[#06386A] transition-transform duration-300 z-50 px-5 py-5 text-white ${isOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed top-0 right-0 h-screen w-72 bg-slate-50 border-l-2 border-gray-200 transition-transform duration-300 z-50 px-5 py-5 text-slate-800 ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="flex items-center justify-between border-b-2 border-slate-200">
-          <h1 className="text-2xl md:text-4xl font-bold text-slate-200">
+        <div className="flex items-center justify-between border-b-2 border-blue-800">
+          <h1 className="text-2xl md:text-4xl font-bold text-slate-800">
             Menu
           </h1>
 

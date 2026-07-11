@@ -5,8 +5,10 @@ function Hero() {
     <section className="relative h-[60dvh] min-h-[300px] md:h-[500px] w-full flex items-center justify-center overflow-hidden">
       <img
         src={heroBg}
-        alt=""
+        alt="Hero backround"
         className="absolute inset-0 object-cover object-center w-full h-full"
+        loading="lazy"
+        fetchpriority="high"
       />
       {/* overlay */}
       <div className="absolute inset-0 bg-black/50 backdrop-blur-xs md:backdrop-blur-sm"></div>

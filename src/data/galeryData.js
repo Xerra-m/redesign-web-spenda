@@ -1,37 +1,37 @@
 export const gallery = [
   {
     id: 1,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 2,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 3,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 4,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 5,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 6,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
   {
     id: 7,
-    name: "",
-    image: "/images/",
+    name: "lorem ipsum",
+    image: "/images/dummyGallery.jpg",
   },
 ];
