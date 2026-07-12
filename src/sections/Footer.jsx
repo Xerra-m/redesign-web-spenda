@@ -5,13 +5,15 @@ function Footer() {
     <footer className="flex flex-col items-center justify-center bg-[#002448] border-t border-gray-200 px-4 py-8">
       <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 max-w-4xl justify-items-center items-start">
         <div className="flex flex-col items-start justify-center">
-          <h2 className="text-slate-100 font-bold text-2xl mb-4">Menu Utama</h2>
+          <h2 className="text-slate-100 font-bold text-xl md:text-2xl mb-4">
+            Menu Utama
+          </h2>
           <ul className="list-none p-0 m-0 space-y-2">
             {menuUtama.map((link) => (
               <li key={link.name} className="w-full md:w-auto">
                 <a
                   href={link.href}
-                  className="text-xl text-slate-300 font-semibold"
+                  className="text-lg md:text-xl text-slate-300 font-semibold"
                 >
                   {link.name}
                 </a>
@@ -20,11 +22,17 @@ function Footer() {
           </ul>
         </div>
         <div className="flex flex-col items-start justify-center">
-          <h2 className="text-slate-100 font-bold text-2xl mb-4">Alamat</h2>
-          <p className="text-xl text-slate-300 font-semibold">{alamat}</p>
+          <h2 className="text-slate-100 font-bold text-xl md:text-2xl mb-4">
+            Alamat
+          </h2>
+          <p className="text-lg md:text-xl text-slate-300 font-semibold">
+            {alamat}
+          </p>
         </div>
         <div className="flex flex-col items-start justify-center space-y-2">
-          <h2 className="text-slate-100 font-bold text-2xl mb-4">Developer</h2>
+          <h2 className="text-slate-100 font-bold text-xl md:text-2xl mb-4">
+            Developer
+          </h2>
           <a
             href="https://www.instagram.com/miftahul_ilma_12?igsh=MTh3c29weWJhYzRkdg=="
             className="text-xl text-slate-300 font-semibold flex items-center gap-2 hover:text-white active:text-white transition-colors"
@@ -59,7 +67,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <p className="text-md md:text-lg font-semibold text-white">
+      <p className="text-md md:text-lg font-semibold text-white text-center">
         Hak cipta © 2026 - UPTD SPF SMP Negeri 2 Tegal
       </p>
     </footer>
