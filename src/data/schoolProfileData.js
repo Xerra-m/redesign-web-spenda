@@ -42,7 +42,7 @@ export const schoolVisionMission = {
 export const principalWelcome = {
   name: "Dra. Ries Murdiani, M.Si",
   role: "Kepala Sekolah",
-  image: "/images/principal.png",
+  image: "/images/principal.webp",
   greetings: [
     "Assalamu’alaikum warahmatullahi wabarakatuh,",
     "Salam sejahtera untuk kita semua,",
