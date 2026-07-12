@@ -30,7 +30,7 @@ function EkskulCard() {
         {ekskulData.map((ekskul) => (
           <SwiperSlide key={ekskul.id}>
             <div
-              className="bg-white border border-gray-200 p-6 flex flex-col justify-between h-[250px] cursor-pointer select-none active:scale-[0.99] transition-transform rounded-md shadow-md mt-5"
+              className="bg-white border border-gray-200 p-6 flex flex-col justify-between h-[250px] cursor-pointer select-none active:scale-[0.99] transition-transform rounded-md shadow-md"
               onMouseEnter={() => swiperRef.current?.autoplay.stop()}
               onTouchStart={() => {
                 if (swiperRef.current?.autoplay?.running) {
